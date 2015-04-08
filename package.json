@@ -1,0 +1,26 @@
+{
+  "name": "plister",
+  "version": "0.0.1",
+  "description": "small utility to transform back and forth between plist and JSON",
+  "main": "index.js",
+  "dependencies": {
+    "string": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toddgeist/plister.git"
+  },
+  "keywords": [
+    "JSON"
+  ],
+  "author": "Todd Geist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toddgeist/plister/issues"
+  },
+  "homepage": "https://github.com/toddgeist/plister"
+}

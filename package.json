@@ -1,6 +1,6 @@
 {
   "name": "plister",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "small utility to transform back and forth between plist and JSON",
   "main": "index.js",
   "dependencies": {

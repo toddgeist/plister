@@ -4,9 +4,9 @@
 
 
 var fs = require('fs');
-var S = require('string')
+var S = require('string');
 
-module.exports = start
+module.exports = start;
 
 
 function start(data){
@@ -33,9 +33,9 @@ function parser(data){
 function handleArray(data){
     var d = '';
     data.forEach(function (item) {
-        var s = parser(item)
+        var s = parser(item);
         d = d + fmQuote(s) + "\r"
-    })
+    });
     return d
 
 }
@@ -45,10 +45,15 @@ function handleObject(obj){
     var d = ''
     keys.forEach(function (key) {
         var o = obj[key];
+        if(Array.isArray(o)){
+            key = '#' + key
+        }
+
         o = parser(o);
 
+
         d = d + key + "=" + fmQuote(o) + "\r" ;
-    })
+    });
     return d
 
 }
